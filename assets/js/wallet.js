@@ -55,7 +55,7 @@ $( document ).ready(function()
      */
     async function isUserConnected()
     {
-        const accounts = await web3.eth.getAccounts(); //await ethereum.request({method: 'eth_accounts'});
+        const accounts = await web3.eth.getAccounts();
         console.log('###LOG: in user connected function..');
 
         // If account is connected
@@ -263,30 +263,4 @@ $( document ).ready(function()
 
 
 });
-
-
-
-
-
- 
-
-
-
-
-// Go to blockchain and get the contract symbol. Keep in mind
-// YOU MUST BE CONNECT TO RINKEBY NETWORK TO USE THIS FUNCTION
-// why -> because this specific contract address is on ethereum.
-// When you click login, just make sure your network is Rinkeby and it will all workout.
-async function getContractSymbol()
-{
-    const CONTRACT_ADDRESS = "0x1A5b30a61CED9B4D9c209E7F1d2fbD38657f8EB1";
-    const contract = new window.web3.eth.Contract(
-        window.ABI,
-        CONTRACT_ADDRESS
-    );
-    const symbol = await contract.methods
-        .symbol()
-        .call({ from: window.userWalletAddress });
-    alert(`Contract ${CONTRACT_ADDRESS} Symbol: ${symbol}`);
-}
 
