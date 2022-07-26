@@ -11,10 +11,9 @@ $( document ).ready(function()
 
 
 
-
     /*
-     * Step zero: If secure protocol checking is enable,
-     * Check the protokol
+     * Step zero: If secure protocol checking is enabled,
+     * Check the protocol
      */
 
     if(checkSecureProtocol === true)
