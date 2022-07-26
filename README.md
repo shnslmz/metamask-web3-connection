@@ -1,6 +1,12 @@
-# Web3 - MetaMask Connection - Wallet Integration
+## Web3 - MetaMask Connection - Wallet Integration
 
 # Screenshots:
+
+### Step zero:
+We check that protocol is secure or not.
+
+<img width="569" alt="Screenshot_43" src="https://user-images.githubusercontent.com/13356931/180990999-04e03c4e-24b2-4ae4-8356-a7c642eff7ff.png">
+
 
 ### First screen is welcome:
 This is the welcome board to connect your wallet.
