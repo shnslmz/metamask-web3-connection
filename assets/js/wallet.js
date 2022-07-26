@@ -71,7 +71,7 @@ $( document ).ready(function()
                 window.userWalletAddress = accounts[0];
                 await setVars(accounts[0]);
 
-                // get balance of wallet, and set it
+                // Get balance of wallet, and set it
                 const walletBalance = await getBalanceOfWallet(accounts[0]);
                 window.walletBalance = walletBalance;
 
